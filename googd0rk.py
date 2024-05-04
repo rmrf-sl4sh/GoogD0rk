@@ -8,7 +8,7 @@ def googd0rk(query, user_agent):
   # Set Google Search URL
   url = "https://www.google.com/search?q=" + query
   # Set User-Agent header
-  headers = {'User-Agent': user_agent}
+  headers = {'User-Agent': user_agent.strip()}
   # Send HTTP GET request
   response = requests.get(url, headers=headers)
   # Return response
